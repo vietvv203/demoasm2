@@ -7,8 +7,8 @@
     <style>
 body {
     font-family: Arial, sans-serif;
-    background-color: #ccf5ff; /* Deep blue background for the body */
-    color: #ccf5ff; /* Adding white text for better readability */
+    background-color: #ffa31a; /* Deep blue background for the body */
+    color: #ffa31a; /* Adding white text for better readability */
     margin: 0;
     padding: 0;
     height: 100px;
@@ -18,7 +18,7 @@ body {
     width: 100%;
     margin: 20px auto;
     border-collapse: collapse;
-    background-color: #ccf5ff; /* Keeping table background white for contrast */
+    background-color: #ffa31a; /* Keeping table background white for contrast */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     overflow: scroll;
     height: 700px;
@@ -47,7 +47,7 @@ th {
 caption {
     font-size: 30px;
     margin: 30px auto;
-    color: #000066; /* Deep blue for caption text */
+    color: #fff; /* Deep blue for caption text */
 }
 form {
     width: 1000%;
@@ -155,7 +155,7 @@ echo "Student already exists";
                 <td><?php echo $row['Sname']; ?></td>
                 <td><?php echo $row['Address']; ?></td>
                 <td><?php echo $row['Email']; ?></td>
-                <td><a href="edit_student.php?id=<?php echo $row['Rollno']; ?>">Edit</a></td>
+                <td><a href="EditStudent.php?id=<?php echo $row['Rollno']; ?>">Edit</a></td>
                 <td><a href="?delete_id=<?php echo $row['Rollno']; ?>">Delete</a></td>
 
             </tr>
@@ -163,7 +163,7 @@ echo "Student already exists";
         
             <?php } ?>
 
-            <td><a href="AddStudent.php">Add New Student</a></td>
+            <td><button><a href="StudentAdd.php">Add New Student</a></td></button>
             
             
 
